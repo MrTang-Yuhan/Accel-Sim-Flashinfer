@@ -1,4 +1,4 @@
-# 快速测试
+# 快速测试 (在flashinfer的conda环境下)
 ## 1. 下载Accel-Sim
 `git clone --branch v1.3.0 https://github.com/accel-sim/accel-sim-framework.git`
 
@@ -35,7 +35,7 @@ cp -r Accel-Sim-Flashinfer/tested-cfgs/* ./gpu-simulator/gpgpu-sim/configs/teste
 
 `make -j -C ./gpu-simulator/`
 
-使用AccelSim运行预先准备好的trace:
+在A100的配置下，使用AccelSim运行预先准备好的trace:
 
 `./gpu-simulator/bin/release/accel-sim.out -trace ./test-traces/flashinfer-singledecode/traces/kernelslist.g -config ./gpu-simulator/gpgpu-sim/configs/tested-cfgs/A100/gpgpusim.config -config ./gpu-simulator/configs/tested-cfgs/A100/trace.config > result-singledecode.log`
 
@@ -57,10 +57,10 @@ cp -r Accel-Sim-Flashinfer/tested-cfgs/* ./gpu-simulator/gpgpu-sim/configs/teste
 
 `./util/tracer_nvbit/tracer_tool/traces-processing/post-traces-processing ./traces/kernelslist`
 
-`rm ./traces/kernel*.trace.xz`
-
-`rm ./traces/kernelslist`
-
+```bash
+rm ./traces/kernel*.trace.xz
+rm ./traces/kernelslist
+```
 
 更换traces为刚刚生成的`./traces/kernelslist.g`:
 
