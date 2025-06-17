@@ -49,6 +49,8 @@ cp -r Accel-Sim-Flashinfer/tested-cfgs/* ./gpu-simulator/gpgpu-sim/configs/teste
 
 `make -C ./util/tracer_nvbit/`
 
+`source ./gpu-app-collection/src/setup_environment`
+
 使用nvbit产生trace:
 
 `CUDA_INJECTION64_PATH=./util/tracer_nvbit/tracer_tool/tracer_tool.so LD_PRELOAD=./util/tracer_nvbit/tracer_tool/tracer_tool.so python3 test-apps/flashinfer-singledecode.py` 
