@@ -1,0 +1,2 @@
+kernel id, kernel mangled name, grid_dimX, grid_dimY, grid_dimZ, #blocks, block_dimX, block_dimY, block_dimZ, #threads, total_insts, total_reported_insts
+kernel-1.trace.xz, _ZN10flashinfer30SinglePrefillWithKVCacheKernelILNS_8MaskModeE1ELNS_15PosEncodingModeE0ELj2ELj4ELj4ELj4ELj1E6__halfNS_16DefaultAttentionILb0ELb0ELb0ELb0EEE6ParamsEEvNS_12uint_fastdivET8_, 1, 1, 4, 4, 32, 4, 1, 128, 29408,29408
